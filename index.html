@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadiku</title>
+    <style>
+        /* Bagian ini untuk mengatur tampilan (Desain/Warna) */
+        :root {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --card-bg: #1e1e1e;
+            --accent-color: #00adb5;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: var(--card-bg);
+            border-bottom: 2px solid var(--accent-color);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            color: #aaaaaa;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        h2 {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+            margin-top: 2rem;
+        }
+        
+        /* Pengaturan Galeri Gambar */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 1.5rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05); /* Efek membesar saat disentuh/kursor di atas gambar */
+        }
+
+        /* Pengaturan Tombol Link */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 1.5rem;
+        }
+        .link-btn {
+            display: block;
+            padding: 15px;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #333;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .link-btn:hover {
+            background-color: var(--accent-color);
+            color: #fff;
+            border-color: var(--accent-color);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- 1. GANTI NAMA KAMU DI BAWAH INI -->
+        <h1>Halo, Saya [Nama Kamu]</h1>
+        <!-- 2. GANTI DESKRIPSI SINGKAT TENTANGMU -->
+        <p>Selamat datang! Ini adalah tempat saya memajang gambar dan tautan penting.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- BAGIAN GALERI GAMBAR -->
+        <h2>Galeri Gambar</h2>
+        <div class="gallery">
+            <!-- 3. CARA UPDATE GAMBAR: Ganti link URL di dalam tanda kutip (src="...") dengan link gambar milikmu -->
+            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=500&q=80" alt="Gambar 1">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&q=80" alt="Gambar 2">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80" alt="Gambar 3">
+        </div>
+
+        <!-- BAGIAN URL / LINK BEBAS -->
+        <h2>Tautan / URL</h2>
+        <div class="links-container">
+            <!-- 4. CARA UPDATE TAUTAN: Ganti URL di href="..." dan ganti nama tombolnya -->
+            <a href="https://instagram.com/namakamu" target="_blank" class="link-btn">Instagram Saya</a>
+            <a href="https://youtube.com/" target="_blank" class="link-btn">Channel YouTube</a>
+            <a href="https://link-artikel-bebas.com" target="_blank" class="link-btn">Baca Artikel Menarik Ini</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Website Pribadi.</p>
+    </footer>
+
+</body>
+</html>
